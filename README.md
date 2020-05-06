@@ -32,96 +32,95 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Each component is divided into two elements: component(react classt, that contains methods and renders the container) and container (functional stateless component, that contains HTML implementation).  
   
-  1. FinalPage - form's last page.  
-  <FinalPageComponent/>  
+ ### 1. FinalPage - form's last page.  
+  `<FinalPageComponent /> ` 
   
   Implements following methods:  
   printUser();  
   
-  <FinalPageContainer/>  
+  `<FinalPageContainer />  `
   
-  2. NavBar - display list of pages and marks current page.  
+ ### 2. NavBar - display list of pages and marks current page.  
     
-  <NavBarComponent page={this.ptops.page} />  
+  `<NavBarComponent page={this.ptops.page} />`  
     
-  Props:  
+ ##### Props:  
   page: PropTypes.number.isRequired,  
     
-  <NavBarContainer page={this.props.page} />  
+  `<NavBarContainer page={this.props.page} /> ` 
     
-  Props:
+ ##### Props:
   page: PropTypes.number.isRequired,  
     
-  3. PrivacyPage - privacy form.  
+ ### 3. PrivacyPage - privacy form.  
     
-  <PrivacyPageComponent handlePageChange={ () => {} } />  
+  `<PrivacyPageComponent handlePageChange={ () => {} } />`  
     
-  Methods:  
+ ##### Methods:  
   handleCheckboxChange(event); - handles checkbox change.  
   handelSubmit(event); - handels form onSubmit button click.  
     
-  Props:  
+ ##### Props:  
   handelPageChange: PropTypes.func.isRequired,  
     
-  State:  
+ ##### State:  
   checkboxOne: boolean,  
   checkboxTwo: boolean,   
     
-  <PrivacyPageContainer  
-    btnClick={this.handelSubmit}  
-    checkboxOne={this.state.checkboxOne}  
-    checkboxTwo={this.state.checkboxTwo}  
-    onCheckboxChange={this.handleCheckboxChange}  
-  />  
+  `<PrivacyPageContainer    
+    btnClick={this.handelSubmit}   
+    checkboxOne={this.state.checkboxOne}    
+    checkboxTwo={this.state.checkboxTwo}    
+    onCheckboxChange={this.handleCheckboxChange}    
+  /> ` 
   
-  Props:  
+ ##### Props:  
   btnClick: PropTypes.func.isRequired,  
 	checkboxOne: PropTypes.bool.isRequired,  
 	checkboxTwo: PropTypes.bool.isRequired,  
 	onCheckboxChange: PropTypes.func.isRequired,  
   
-  4. UserForm - first page, collects user information.  
+ ### 4. UserForm - first page, collects user information.  
     
-  <UserFormComponent  
+ ` <UserFormComponent    
     addError={ () => {} }  
     handelPageChange={ () => {} }  
-  />  
+  />  `
     
-  Methods:  
+ ##### Methods:  
   handelChange(event); - handles input field change.  
   handelSubmit(event); - handles onSubmit button click.  
   validateEmail(); - email validation, returns true if email is valid, false if not.  
   validateName(); - name validation, returns true if name is valid, false if not.  
   validatePassword(); - password validation, returns true if password is valid, false if not.  
     
-  Props:  
+ ##### Props:  
   addError: PropTypes.func.isRequired,  
   handelPageChange: PropTypes.func.isRequired,  
     
-  States:  
+ ##### States:  
   email: String,  
   name: String,  
   password: String,  
   role: String,  
     
-  <UserFormContainer  
-    btnClick={this.handelSubmit}  
-    email={this.state.email}    
-    errors={[]}  
-    fieldOnChange={this.handelChange}  
-    name={this.state.name}  
-    password={this.state.password}  
-    role={this.state.role}  
-  />  
+  `<UserFormContainer  
+   	btnClick={this.handelSubmit}  
+   	email={this.state.email}  
+   	errors={[]} fieldOnChange={this.handelChange}  
+   	name={this.state.name}  
+   	password={this.state.password}  
+   	role={this.state.role}  
+  />`
     
-  Props:  
-  btnClick: PropTypes.func.isRequired,  
-	email: PropTypes.string.isRequired,  
-	errors: PropTypes.array.isRequired,  
-	fieldOnChange: PropTypes.func.isRequired,  
-	name: PropTypes.string.isRequired,  
-	password: PropTypes.string.isRequired,  
-	role: PropTypes.string.isRequired,  
+ ##### Props:  
+ btnClick: PropTypes.func.isRequired,  
+ email: PropTypes.string.isRequired,  
+ errors: PropTypes.array.isRequired,  
+ fieldOnChange: PropTypes.func.isRequired,  
+ name: PropTypes.string.isRequired,  
+ password: PropTypes.string.isRequired,  
+ role: PropTypes.string.isRequired,  
   
   ## ACTIONS
   
