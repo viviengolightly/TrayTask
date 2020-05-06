@@ -33,14 +33,13 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Each component is divided into two elements: component(react classt, that contains methods and renders the container) and container (functional stateless component, that contains HTML implementation).  
   
   1. FinalPage - form's last page.  
-    
   <FinalPageComponent />  
-    
+  
   Implements following methods:  
   printUser();  
-    
+  
   <FinalPageContainer />  
-    
+  
   2. NavBar - display list of pages and marks current page.  
     
   <NavBarComponent page={this.ptops.page} />  
