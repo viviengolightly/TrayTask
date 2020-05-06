@@ -33,12 +33,12 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Each component is divided into two elements: component(react classt, that contains methods and renders the container) and container (functional stateless component, that contains HTML implementation).  
   
   1. FinalPage - form's last page.  
-  <FinalPageComponent />  
+  <FinalPageComponent/>  
   
   Implements following methods:  
   printUser();  
   
-  <FinalPageContainer />  
+  <FinalPageContainer/>  
   
   2. NavBar - display list of pages and marks current page.  
     
@@ -134,6 +134,5 @@ Each component is divided into two elements: component(react classt, that contai
   UPDATE_PRIVACY_INFO: updatePrivacyInfo(checkboxOne, checkboxTwo); - returns updated checkboxes, and updates store's 
   checkboxOne and checkboxTwo states.
   
-  UPDATE_USER_DETAILS: updateUserInfo(email, name, password, role); - returns new user data, and updates states in the store    
-  respeectively
-  
+  UPDATE_USER_DETAILS: updateUserInfo(email, name, password, role); - returns new user data, and updates states in the store respectively.  
+ 
