@@ -1,0 +1,25 @@
+.barWrapper{
+    margin: 50px auto 10px auto;
+    width: 440px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 4px #ddd;
+    position: relative;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+.colActive{
+    background-color: lightblue;
+}
+.headerText{
+    text-align: center;
+    font-size: medium;
+}
+  
+  
