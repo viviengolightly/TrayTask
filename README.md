@@ -28,7 +28,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## FORM APP
 
-# COMPONENTS 
+## COMPONENTS 
 
 Each component is divided into two elements: component(react classt, that contains methods and renders the container) and container (functional stateless component, that contains HTML implementation). 
 
@@ -36,7 +36,7 @@ Each component is divided into two elements: component(react classt, that contai
   
   <FinalPageComponent />
   
-  Implements following functions:
+  Implements following methods:
   printUser(); 
   
   <FinalPageContainer />
@@ -124,13 +124,17 @@ Each component is divided into two elements: component(react classt, that contai
 	password: PropTypes.string.isRequired,
 	role: PropTypes.string.isRequired,
   
-  # ACTIONS
+  ## ACTIONS
   
   ADD_ERROR: addError(error); - adds error to errors state array in a store.
+  
   CLEAR_ERRORS: clearErrors(); - returns empty errors array, and udate the store state.
+  
   CHANGE_PAGE: handelPageChange(); - returns updated page, and updates store's page state.
+  
   UPDATE_PRIVACY_INFO: updatePrivacyInfo(checkboxOne, checkboxTwo); - returns updated checkboxes, and updates store's 
   checkboxOne and checkboxTwo states.
+  
   UPDATE_USER_DETAILS: updateUserInfo(email, name, password, role); - returns new user data, and updates states in the store    
   respeectively
   
